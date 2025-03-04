@@ -21,15 +21,27 @@ public class CarProducer {
     }
 
     public void sendMessage(Car car) {
-        kafkaTemplate.send(topicName, car.getId().toString(), car).whenComplete((success, error) -> {
-            if (!error.getMessage().isBlank()) {
-                log.info("Falha ao enviar message car: " + error.getMessage());
-                return;
-            }
 
-            log.info("Mensagem Enviada com sucesso: " + success);
+        // forma ANTIGA de adicionar logs (spring 2.x.x)
+//        kafkaTemplate.send(topicName, car.getId().toString(), car).whenComplete((success, error) -> {
+//            if (!error.getMessage().isBlank()) {
+//                log.info("Falha ao enviar message car: " + error.getMessage());
+//                return;
+//            }
+//
+//            log.info("Mensagem Enviada com sucesso: " + success);
+//
+//        });
 
-        });
+
+        // forma nova de adicionar logs (spring 3.x.x)
+        kafkaTemplate.send(topicName, car)
+                .thenRun(() -> log.info("Mensagem enviada com sucesso para o tópico car: {}", topicName))
+                .exceptionally(ex -> {
+                    log.error("Falha ao enviar mensagem para o tópico: {}, message error: {}", topicName, ex);
+                    return null;
+                });
+
     }
 
 
