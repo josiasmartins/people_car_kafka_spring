@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6f6a76f-e34c-4de0-b747-2be9dd0ea48e" name="Changes" comment="feature(wip): create class PeopleProducer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsumerSpringkafka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerSpringkafka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsumerSpringkafka/src/main/java/br/com/josiasmartins/springkafka/domain/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerSpringkafka/src/main/java/br/com/josiasmartins/springkafka/domain/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsumerSpringkafka/src/main/java/br/com/josiasmartins/springkafka/domain/entity/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConsumerSpringkafka/src/main/java/br/com/josiasmartins/springkafka/domain/entity/People.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ConsumerSpringkafka" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar!/com/fasterxml/jackson/core/JsonParseException.class" root0="SKIP_INSPECTION" />
@@ -43,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.SpringkafkaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springKafka [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springkafka [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springkafka [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/josias/Documents/projects/spring/springkafka/src/main/java/br/com/josiasmartins/springkafka/domain&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/josias/Documents/projects/spring/springkafka/ConsumerSpringkafka&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringkafkaApplication.executor": "Run",
+    "Maven.springKafka [install].executor": "Run",
+    "Maven.springkafka [clean].executor": "Run",
+    "Maven.springkafka [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/josias/Documents/projects/spring/springkafka/src/main/java/br/com/josiasmartins/springkafka/domain",
+    "last_opened_file_path": "/home/josias/Documents/projects/spring/test/people_car_kafka_spring",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.SpringkafkaApplication">
     <configuration name="SpringkafkaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.josiasmartins.springkafka.SpringkafkaApplication" />
