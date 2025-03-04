@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "e214aa15-1f62-4edc-8eb1-2b0b05efc95c",
+		"name": "people_car_kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11087463",
+		"_collection_link": "https://martian-escape-358671.postman.co/workspace/estudo~506a2aef-ad07-4f1d-9ec2-d56bcc0fd652/collection/11087463-e214aa15-1f62-4edc-8eb1-2b0b05efc95c?action=share&source=collection_link&creator=11087463"
+	},
+	"item": [
+		{
+			"name": "POST Enviar mensagem no topico peoples",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jaime\",\n    \"cpf\": \"123456789\",\n    \"books\": [\n        \"livro 1\",\n        \"livro 2\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Enviar mensagem no topico Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jaime\",\n    \"cpf\": \"123456789\",\n    \"books\": [\n        \"livro 1\",\n        \"livro 2\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
