@@ -21,10 +21,15 @@ public class CarProducer {
     }
 
     public void sendMessage(Car car) {
-        kafkaTemplate.send(topicName, car.getId().toString(), car).addCallback(
-                success -> log.info("Mensagem enviada com sucesso no car!"),
-                failure -> log.error("Falha ao Enviar a Mensagem!")
-        );
+        kafkaTemplate.send(topicName, car.getId().toString(), car).whenComplete((success, error) -> {
+            if (!error.getMessage().isBlank()) {
+                log.info("Falha ao enviar message car: " + error.getMessage());
+                return;
+            }
+
+            log.info("Mensagem Enviada com sucesso: " + success);
+
+        });
     }
 
 

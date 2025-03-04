@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.7</version>
+		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com</groupId>
@@ -14,9 +14,9 @@
 	<name>springKafka</name>
 	<description>springKafka</description>
 	<properties>
-		<java.version>11</java.version>
-		<avro.version>1.11.0</avro.version>
-		<kafka-confluent.version>7.1.1</kafka-confluent.version>
+		<java.version>17</java.version>
+		<avro.version>1.12.0</avro.version>
+		<kafka-confluent.version>7.8.0</kafka-confluent.version>
 	</properties>
 
 	<!-- Repositorio necessario para baixar a dependencia do Kafka Avro Serializer -->
